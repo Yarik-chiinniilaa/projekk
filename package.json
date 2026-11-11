@@ -1,0 +1,20 @@
+{
+  "name": "rental-is",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Оренда квартир — база даних (SQLite) і REST API",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "client": "npm run dev --prefix client",
+    "db:init": "node scripts/init-db.js",
+    "db:empty": "node scripts/init-db.js --no-seed",
+    "db:show": "node scripts/show-db.js",
+    "db:check": "node scripts/check-db.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "express": "^4.21.2"
+  }
+}
